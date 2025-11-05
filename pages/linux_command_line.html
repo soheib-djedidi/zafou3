@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <link rel="stylesheet" href="../css/linux_command_line.css" />
+    <title>COURS SIO WEB | Commandes Linux</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="javascript.html">JavaScript</a>
+          <a href="php.html">PHP</a>
+          <a href="kotlin.html">Kotlin</a>
+          <a href="python.html">Python</a>
+          <a href="sql.html">SQL</a>
+          <a href="angular.html">Angular</a>
+          <a href="git.html">Git</a>
+          <a href="github.html">GitHub</a>
+          <a href="linux.html">Linux</a>
+          <a href="linux_command_line.html">Ligne de commande Linux</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <section class="page-intro">
+          <h1>Commandes Linux indispensables</h1>
+          <p>
+            Ce mémento rassemble les commandes étudiées pendant les séances de
+            SISR. Chaque action est accompagnée d'un exemple concret et d'une
+            description pour faciliter la révision.
+          </p>
+        </section>
+        <section class="page-section">
+          <h2>Mémento rapide</h2>
+          <table class="commands-table">
+            <caption>Tableau de synthèse des commandes Linux</caption>
+            <thead>
+              <tr>
+                <th scope="col">Commande</th>
+                <th scope="col">Description</th>
+                <th scope="col">Exemple d'utilisation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><code>ls</code></th>
+                <td>Liste le contenu du répertoire courant.</td>
+                <td><code>ls -la</code></td>
+              </tr>
+              <tr>
+                <th scope="row"><code>cd</code></th>
+                <td>Change de répertoire.</td>
+                <td><code>cd /var/www</code></td>
+              </tr>
+              <tr>
+                <th scope="row"><code>mkdir</code></th>
+                <td>Crée un nouveau dossier.</td>
+                <td><code>mkdir sauvegardes</code></td>
+              </tr>
+              <tr>
+                <th scope="row"><code>rm</code></th>
+                <td>Supprime un fichier ou un dossier.</td>
+                <td><code>rm fichier.log</code></td>
+              </tr>
+              <tr>
+                <th scope="row"><code>cp</code></th>
+                <td>Copie un fichier ou un répertoire.</td>
+                <td><code>cp index.html backup/index.html</code></td>
+              </tr>
+              <tr>
+                <th scope="row"><code>pwd</code></th>
+                <td>Affiche le chemin du répertoire courant.</td>
+                <td><code>pwd</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="page-section">
+          <h2>Comprendre la structure de la table</h2>
+          <ul>
+            <li>
+              <code>&lt;table&gt;</code> encapsule l'ensemble du tableau.
+            </li>
+            <li>
+              <code>&lt;caption&gt;</code> fournit un titre accessible décrivant le
+              contenu.
+            </li>
+            <li>
+              <code>&lt;thead&gt;</code> regroupe l'en-tête et <code>&lt;th&gt;</code>
+              définit les cellules de titre.
+            </li>
+            <li>
+              <code>&lt;tbody&gt;</code> contient les lignes de données composées
+              d'éléments <code>&lt;tr&gt;</code>.
+            </li>
+            <li>
+              <code>&lt;td&gt;</code> représente une cellule standard tandis que
+              <code>scope</code> améliore l'accessibilité en reliant les titres
+              aux cellules de données.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer" id="contact">
+      <div class="footer-content">
+        <form class="footer-form" method="post" action="#contact">
+          <fieldset>
+            <legend>Contact rapide</legend>
+            <label for="footer-name">Nom complet</label>
+            <input
+              type="text"
+              id="footer-name"
+              name="full-name"
+              required
+              placeholder="Ex. Ada Lovelace"
+            />
+            <label for="footer-email">Adresse e-mail</label>
+            <input
+              type="email"
+              id="footer-email"
+              name="email"
+              required
+              placeholder="vous@example.com"
+            />
+            <label for="footer-message">Votre message</label>
+            <textarea
+              id="footer-message"
+              name="message"
+              rows="3"
+              required
+              placeholder="Expliquez votre demande..."
+            ></textarea>
+            <button type="submit">Envoyer ma question</button>
+          </fieldset>
+        </form>
+        <p class="form-guidance">
+          Nous répondons dans un délai indicatif de 48&nbsp;heures pendant les
+          heures de cours.
+        </p>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

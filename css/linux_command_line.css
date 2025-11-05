@@ -1,0 +1,50 @@
+.commands-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(23, 38, 64, 0.08);
+}
+
+.commands-table caption {
+  caption-side: top;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 16px;
+  color: #1a3668;
+}
+
+.commands-table th,
+.commands-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.commands-table thead {
+  background: linear-gradient(135deg, #1a3668, #24497a);
+  color: #fff;
+}
+
+.commands-table tbody tr:nth-child(even) {
+  background-color: rgba(26, 54, 104, 0.05);
+}
+
+.commands-table code {
+  background-color: rgba(26, 54, 104, 0.08);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .commands-table th,
+  .commands-table td {
+    padding: 12px;
+  }
+
+  .commands-table {
+    font-size: 0.95rem;
+  }
+}

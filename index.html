@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <!-- commentaires en html : avec win CTRL + / en linux CTRL+SHIFT+/ (/ à droite de la barre d'espace)-->
+    <!--
+    le header: 
+    Ce composant représente l'en-tête principal de l'application. 
+    Il inclut généralement le logo, la navigation principale, et éventuellement des actions utilisateur 
+    telles que la connexion ou l'accès au profil. 
+    Utilisez ce composant pour afficher les éléments de navigation globaux et renforcer l'identité visuelle de l'application.
+-->
+
+    <!--
+    <meta charset="UTF-8" /> :
+    Définit l'encodage des caractères du document en UTF-8, ce qui permet d'afficher correctement les caractères spéciaux et internationaux.
+-->
+
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> :
+    Permet d'assurer que la page s'affiche correctement sur tous les appareils (responsive design) 
+    en adaptant la largeur de la page à celle de l'écran de l'utilisateur.
+-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/etudiant-diplome-64.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--
+      <link rel="stylesheet" href="style.css" /> :
+      Lien vers la feuille de style CSS externe qui contient les styles pour la mise en page et l'apparence du site.
+      Cela permet de séparer le contenu HTML de la présentation visuelle.-->
+    <link rel="stylesheet" href="css/Global.css" />
+    <title>COURS SIO WEB | Éléments technique du BTS SIO</title>
+  </head>
+  <body>
+    <!--
+      Le header (<header>) est la section d'en-tête de la page.
+      Il contient généralement le titre principal, le logo, et la navigation principale du site.
+      Ici, il accueille le titre "Bienvenue sur le site de cours" et le menu de navigation.
+    -->
+    <header>
+      <!--
+        La balise <nav> est utilisée pour définir une section de navigation dans le document.
+        Elle contient des liens vers les différentes sections du site.
+        Ici, elle inclut un logo, un menu de navigation et un menu burger pour les écrans plus petits.-->
+      <nav>
+        <!--
+          La div avec la classe "logo" représente le logo du site.
+          Elle peut contenir une image ou du texte qui sert d'identité visuelle pour le site.
+          class :
+          En CSS, une classe est un sélecteur qui permet d'appliquer des styles à un ou plusieurs éléments HTML portant une même classe. La classe est définie dans le CSS avec un point (.) suivi du nom de la classe.
+          id :
+          Un identifiant (id) est un sélecteur unique qui permet de cibler un élément HTML spécifique. Contrairement à une classe, un id doit être unique dans le document et est défini dans le CSS avec un dièse (#) suivi du nom de l'id.
+          -->
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="index.html">Accueil</a>
+          <a href="pages/html.html">HTML</a>
+          <a href="pages/css.html">CSS</a>
+          <a href="pages/javascript.html">JavaScript</a>
+          <a href="pages/php.html">PHP</a>
+          <a href="pages/kotlin.html">Kotlin</a>
+          <a href="pages/python.html">Python</a>
+          <a href="pages/sql.html">SQL</a>
+          <a href="pages/angular.html">Angular</a>
+          <a href="pages/git.html">Git</a>
+          <a href="pages/github.html">GitHub</a>
+          <a href="pages/linux.html">Linux</a>
+          <a href="pages/linux_command_line.html">Ligne de commande Linux</a>
+        </div>
+
+        <!--
+          La div avec la classe "burger" représente le menu burger, qui est un élément de navigation compact pour les écrans plus petits.
+
+          arial-label="Menu" :
+          Attribut utilisé pour fournir une description accessible du menu burger aux technologies d'assistance, comme les lecteurs d'écran.
+
+          aria-expanded="false" : Indique si le menu burger est actuellement ouvert ou fermé.
+          role="button" : Indique que cet élément agit comme un bouton interactif.
+          tabindex="0" : Permet à l'élément d'être focalisé par le clavier, rendant le menu accessible aux utilisateurs de claviers.
+          Ces attributs améliorent l'accessibilité du menu burger pour les utilisateurs de technologies d'assistance.
+          -->
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <!--
+            Les <div> à l'intérieur de la classe "burger" représentent les trois barres du menu burger.
+            Elles sont stylisées pour ressembler à un hamburger.-->
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+
+    <!--
+      Le main (<main>) est la section principale du contenu de la page.
+    -->
+    <main>
+      <div class="content-wrapper">
+        <section class="page-intro">
+          <h1>Introduction</h1>
+          <p>
+            Bienvenue sur le site de cours SIO Web. Ce site est conçu pour vous
+            aider à apprendre les bases du développement web, y compris HTML,
+            CSS, JavaScript, PHP et bien plus encore. Explorez les différentes
+            sections pour découvrir des articles détaillés sur chaque sujet.
+          </p>
+        </section>
+        <section class="page-section">
+          <h2>Les Langages Frontend</h2>
+          <p>
+            Les langages frontend sont utilisés pour créer l'interface
+            utilisateur des applications web. Ils permettent de structurer,
+            styliser et dynamiser les pages web.
+          </p>
+          <div class="d-flex wrap">
+            <article>
+              <i class="fab fa-html5 htmlColor icon"></i>
+              <h3>Qu'est-ce que l'HTML&nbsp;?</h3>
+              <p>
+                HTML est le langage standard utilisé pour structurer les pages
+                web et définir les éléments qui la composent.
+              </p>
+              <button><a href="pages/html.html">En savoir plus</a></button>
+            </article>
+            <article>
+              <i class="fab fa-css3-alt cssColor icon"></i>
+              <h3>Qu'est-ce que le CSS&nbsp;?</h3>
+              <p>
+                CSS permet de contrôler l'apparence d'une page web : couleurs,
+                polices, espacements et animations.
+              </p>
+              <button><a href="pages/css.html">En savoir plus</a></button>
+            </article>
+            <article>
+              <i class="fab fa-js-square jsColor icon"></i>
+              <h3>Qu'est-ce que le JavaScript&nbsp;?</h3>
+              <p>
+                JavaScript ajoute de l'interactivité aux pages web et permet de
+                manipuler le DOM en temps réel.
+              </p>
+              <button><a href="pages/javascript.html">En savoir plus</a></button>
+            </article>
+          </div>
+        </section>
+        <section class="page-section">
+          <h2>Les Langages Backend</h2>
+          <p>
+            Les langages backend gèrent la logique métier, les échanges avec les
+            bases de données et la sécurité des applications web.
+          </p>
+          <div class="d-flex wrap">
+            <article>
+              <i class="fab fa-php phpColor icon"></i>
+              <h3>Qu'est-ce que le PHP&nbsp;?</h3>
+              <p>
+                PHP est un langage côté serveur qui permet de créer des sites web
+                dynamiques et connectés à des bases de données.
+              </p>
+              <button><a href="pages/php.html">En savoir plus</a></button>
+            </article>
+            <article>
+              <img src="img/Kotlin.png" alt="Logo Kotlin" class="kotlinLogo" />
+              <h3>Qu'est-ce que Kotlin&nbsp;?</h3>
+              <p>
+                Kotlin est un langage moderne compatible avec l'écosystème Java,
+                utilisé pour le développement mobile et backend.
+              </p>
+              <button><a href="pages/kotlin.html">En savoir plus</a></button>
+            </article>
+            <article>
+              <i class="fab fa-python pythonColor icon"></i>
+              <h3>Qu'est-ce que Python&nbsp;?</h3>
+              <p>
+                Python est apprécié pour sa syntaxe claire et sert dans le web,
+                la data, l'automatisation ou encore l'intelligence artificielle.
+              </p>
+              <button><a href="pages/python.html">En savoir plus</a></button>
+            </article>
+            <article>
+              <i class="fas fa-database sqlColor icon"></i>
+              <h3>Qu'est-ce que le SQL&nbsp;?</h3>
+              <p>
+                SQL est le langage de référence pour manipuler les bases de
+                données relationnelles.
+              </p>
+              <button><a href="pages/sql.html">En savoir plus</a></button>
+            </article>
+          </div>
+        </section>
+        <section class="page-section">
+          <h2>Les Frameworks</h2>
+          <p>
+            Les frameworks accélèrent le développement en proposant une
+            structure et des composants réutilisables.
+          </p>
+          <article>
+            <i class="fab fa-angular angularColor icon"></i>
+            <h3>Qu'est-ce qu'Angular&nbsp;?</h3>
+            <p>
+              Angular est un framework front-end maintenu par Google qui
+              s'appuie sur TypeScript et une architecture par composants.
+            </p>
+            <button><a href="pages/angular.html">En savoir plus</a></button>
+          </article>
+        </section>
+        <section class="page-section">
+          <h2>Outils et technologies</h2>
+          <p>
+            Découvrez des outils incontournables pour versionner votre code et
+            travailler efficacement sur vos projets.
+          </p>
+          <div class="d-flex wrap">
+            <article>
+              <i class="fab fa-git-alt gitColor icon"></i>
+              <h3>Qu'est-ce que Git&nbsp;?</h3>
+              <p>
+                Git est un système de contrôle de version distribué pour suivre
+                l'évolution d'un projet et collaborer.
+              </p>
+              <button><a href="pages/git.html">En savoir plus</a></button>
+            </article>
+            <article>
+              <i class="fab fa-github githubColor icon"></i>
+              <h3>Qu'est-ce que GitHub&nbsp;?</h3>
+              <p>
+                GitHub est une plateforme collaborative qui héberge des dépôts
+                Git et facilite le travail en équipe.
+              </p>
+              <button><a href="pages/github.html">En savoir plus</a></button>
+            </article>
+            <article>
+              <i class="fab fa-linux linuxColor icon"></i>
+              <h3>Qu'est-ce que Linux&nbsp;?</h3>
+              <p>
+                Linux est un système d'exploitation libre reconnu pour sa
+                stabilité et sa sécurité.
+              </p>
+              <button><a href="pages/linux.html">En savoir plus</a></button>
+            </article>
+            <article>
+              <i class="fas fa-terminal terminalColor icon"></i>
+              <h3>Commandes Linux</h3>
+              <p>
+                La ligne de commande offre un accès rapide et scriptable aux
+                fonctionnalités avancées du système.
+              </p>
+              <button><a href="pages/linux_command_line.html">En savoir plus</a></button>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!--
+      Le footer (<footer>) est la section de pied de page de la page.
+      Il contient généralement des informations supplémentaires comme les droits d'auteur, les liens vers les politiques de confidentialité, etc.
+      Ici, il affiche un message de droits d'auteur.
+    -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-content">
+        <form class="footer-form" method="post" action="#contact">
+          <fieldset>
+            <legend>Contact rapide</legend>
+            <label for="footer-name">Nom complet</label>
+            <input type="text" id="footer-name" name="full-name" required placeholder="Ex. DJEDIDI Soheib" />
+            <label for="footer-email">Adresse e-mail</label>
+            <input type="email" id="footer-email" name="email" required placeholder="vous@example.com" />
+            <label for="footer-message">Votre message</label>
+            <textarea id="footer-message" name="message" rows="3" required placeholder="Expliquez votre demande..."></textarea>
+            <button type="submit">Envoyer ma question</button>
+          </fieldset>
+        </form>
+        <p class="form-guidance">Nous répondons dans un délai indicatif de 48&nbsp;heures pendant les heures de cours.</p>
+      </div>
+    </footer>
+    <!-- script en bas de page aprés le footer-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

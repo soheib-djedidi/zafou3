@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | HTML</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="javascript.html">JavaScript</a>
+          <a href="php.html">PHP</a>
+          <a href="kotlin.html">Kotlin</a>
+          <a href="python.html">Python</a>
+          <a href="sql.html">SQL</a>
+          <a href="angular.html">Angular</a>
+          <a href="git.html">Git</a>
+          <a href="github.html">GitHub</a>
+          <a href="linux.html">Linux</a>
+          <a href="linux_command_line.html">Ligne de commande Linux</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <section class="page-intro">
+          <h1>Introduction à HTML</h1>
+          <p>
+            L'HTML a été créé par Tim Berners-Lee en 1991 afin de partager des
+            documents scientifiques sur le Web. Aujourd'hui, le langage reste la
+            base de toute page web : il définit la structure du contenu et
+            permet de hiérarchiser l'information.
+          </p>
+        </section>
+        <section class="page-section">
+          <h2>Balises essentielles</h2>
+          <p>
+            Les balises structurent un document HTML. Elles encadrent le contenu
+            et peuvent accepter des attributs pour apporter des précisions.
+          </p>
+          <ul>
+            <li>&lt;h1&gt; à &lt;h6&gt; pour les titres hiérarchisés.</li>
+            <li>&lt;p&gt; pour déclarer un paragraphe de texte.</li>
+            <li>&lt;a&gt; pour créer un lien hypertexte.</li>
+            <li>&lt;img&gt; pour afficher une image.</li>
+            <li>&lt;section&gt; pour grouper un ensemble d'éléments liés.</li>
+          </ul>
+        </section>
+        <section class="page-section">
+          <h2>Exemple de structure HTML</h2>
+          <pre>
+            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;Exemple de page HTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Bienvenue sur ma page web&lt;/h1&gt;
+    &lt;p&gt;Ceci est un paragraphe d'exemple.&lt;/p&gt;
+    &lt;a href="https://www.example.com"&gt;Visitez mon site&lt;/a&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </code>
+          </pre>
+        </section>
+        <section class="page-section" id="formulaire-html">
+          <h2>Formulaire d'entraînement</h2>
+          <p>
+            Le formulaire ci-dessous reprend les éléments demandés dans
+            l'atelier. Chaque balise est accompagnée d'un commentaire expliquant
+            son rôle ou celui de ses attributs.
+          </p>
+          <!-- method="post" envoie les données de manière sécurisée. -->
+          <!-- action="#formulaire-html" indique la ressource qui recevra les données. -->
+          <form class="footer-form" method="post" action="#formulaire-html">
+            <fieldset>
+              <legend>Envoyer une question</legend>
+              <!-- La balise label relie un texte descriptif à un champ grâce à l'attribut for. -->
+              <label for="html-name">Nom complet</label>
+              <!-- type="text" accepte une saisie libre, name="full-name" identifie la donnée et required impose de remplir le champ. -->
+              <input
+                type="text"
+                id="html-name"
+                name="full-name"
+                required
+                placeholder="Ex. Ada Lovelace"
+              />
+              <!-- type="email" applique une validation automatique sur le format de l'adresse. -->
+              <label for="html-email">Adresse e-mail</label>
+              <!-- name="email" permettra d'accéder à la valeur côté serveur. -->
+              <input
+                type="email"
+                id="html-email"
+                name="email"
+                required
+                placeholder="vous@example.com"
+              />
+              <!-- textarea offre une zone multiligne pour écrire un message détaillé. -->
+              <label for="html-message">Votre message</label>
+              <textarea
+                id="html-message"
+                name="message"
+                rows="4"
+                required
+                placeholder="Expliquez votre besoin ou votre question"
+              ></textarea>
+              <!-- Le bouton de type submit déclenche l'envoi du formulaire. -->
+              <button type="submit">Envoyer</button>
+            </fieldset>
+          </form>
+        </section>
+        <section class="page-section">
+          <h2>Attributs essentiels d'un formulaire</h2>
+          <ul>
+            <li>
+              <strong>method</strong> : définit la manière dont les données sont
+              transmises (GET ou POST). POST est privilégié pour envoyer des
+              informations sensibles.
+            </li>
+            <li>
+              <strong>action</strong> : indique l'URL du script ou de la page qui
+              recevra les données saisies.
+            </li>
+            <li>
+              <strong>required</strong> : oblige l'utilisateur à renseigner un
+              champ avant l'envoi du formulaire.
+            </li>
+            <li>
+              <strong>name</strong> : associe un identifiant à chaque champ afin
+              d'exploiter sa valeur côté serveur.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer" id="contact">
+      <div class="footer-content">
+        <form class="footer-form" method="post" action="#contact">
+          <fieldset>
+            <legend>Contact rapide</legend>
+            <label for="footer-name">Nom complet</label>
+            <input
+              type="text"
+              id="footer-name"
+              name="full-name"
+              required
+              placeholder="Ex. Ada Lovelace"
+            />
+            <label for="footer-email">Adresse e-mail</label>
+            <input
+              type="email"
+              id="footer-email"
+              name="email"
+              required
+              placeholder="vous@example.com"
+            />
+            <label for="footer-message">Votre message</label>
+            <textarea
+              id="footer-message"
+              name="message"
+              rows="3"
+              required
+              placeholder="Expliquez votre demande..."
+            ></textarea>
+            <button type="submit">Envoyer ma question</button>
+          </fieldset>
+        </form>
+        <p class="form-guidance">
+          Nous répondons dans un délai indicatif de 48&nbsp;heures pendant les
+          heures de cours.
+        </p>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

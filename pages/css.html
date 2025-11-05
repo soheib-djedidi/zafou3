@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | CSS</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="javascript.html">JavaScript</a>
+          <a href="php.html">PHP</a>
+          <a href="kotlin.html">Kotlin</a>
+          <a href="python.html">Python</a>
+          <a href="sql.html">SQL</a>
+          <a href="angular.html">Angular</a>
+          <a href="git.html">Git</a>
+          <a href="github.html">GitHub</a>
+          <a href="linux.html">Linux</a>
+          <a href="linux_command_line.html">Ligne de commande Linux</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <section class="page-intro">
+          <h1>Introduction à CSS</h1>
+          <p>
+            CSS (Cascading Style Sheets) définit l'apparence visuelle des pages
+            web. Il a été normalisé par le W3C en 1996 et s'est enrichi de
+            nombreuses fonctionnalités : animations, grilles, variables
+            personnalisées ou encore mises en page responsive.
+          </p>
+        </section>
+        <section class="page-section">
+          <h2>Structurer une feuille de style</h2>
+          <p>
+            Une règle CSS se compose d'un sélecteur et d'un bloc de déclarations
+            : chaque déclaration associe une propriété à une valeur.
+          </p>
+          <pre>
+            <code>
+article {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+}
+            </code>
+          </pre>
+        </section>
+
+        <section class="page-section">
+          <h2>Lier une feuille CSS à une page HTML</h2>
+          <p>
+            On relie généralement une feuille de style externe avec la balise
+            <code>&lt;link rel="stylesheet" href="chemin.css" /&gt;</code>
+            placée dans l'en-tête du document. Cette méthode sépare le contenu
+            (HTML) de la présentation (CSS) et facilite la maintenance en
+            centralisant les styles au même endroit.
+          </p>
+          <p>
+            En utilisant un fichier CSS unique pour plusieurs pages, on garantit
+            également une charte graphique cohérente et on réduit la quantité de
+            code chargé par le navigateur grâce à la mise en cache.
+          </p>
+        </section>
+        <section class="page-section">
+          <h2>Bonnes pratiques</h2>
+          <ul>
+            <li>Utiliser des classes explicites pour cibler les éléments.</li>
+            <li>
+              Centraliser les couleurs, polices et espacements dans des variables
+              ou des feuilles communes.
+            </li>
+            <li>
+              Travailler la responsivité avec des media queries pour s'adapter à
+              chaque support.
+            </li>
+            <li>
+              Tester l'accessibilité : contraste des couleurs, taille des
+              polices, interactions au clavier.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer" id="contact">
+      <div class="footer-content">
+        <form class="footer-form" method="post" action="#contact">
+          <fieldset>
+            <legend>Contact rapide</legend>
+            <label for="footer-name">Nom complet</label>
+            <input
+              type="text"
+              id="footer-name"
+              name="full-name"
+              required
+              placeholder="Ex. Ada Lovelace"
+            />
+            <label for="footer-email">Adresse e-mail</label>
+            <input
+              type="email"
+              id="footer-email"
+              name="email"
+              required
+              placeholder="vous@example.com"
+            />
+            <label for="footer-message">Votre message</label>
+            <textarea
+              id="footer-message"
+              name="message"
+              rows="3"
+              required
+              placeholder="Expliquez votre demande..."
+            ></textarea>
+            <button type="submit">Envoyer ma question</button>
+          </fieldset>
+        </form>
+        <p class="form-guidance">
+          Nous répondons dans un délai indicatif de 48&nbsp;heures pendant les
+          heures de cours.
+        </p>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
